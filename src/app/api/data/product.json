@@ -1,0 +1,20 @@
+{
+  "id": 3,
+  "title": "Ergonomic Bronze Pizza",
+  "price": 669,
+  "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+  "images": [
+    "https://picsum.photos/640/640?r=9039",
+    "https://picsum.photos/640/640?r=2971",
+    "https://picsum.photos/640/640?r=7746"
+  ],
+  "creationAt": "2023-04-22T11:52:39.000Z",
+  "updatedAt": "2023-04-22T11:52:39.000Z",
+  "category": {
+    "id": 4,
+    "name": "Shoes",
+    "image": "https://picsum.photos/640/640?r=4407",
+    "creationAt": "2023-04-22T11:52:39.000Z",
+    "updatedAt": "2023-04-22T11:52:39.000Z"
+  }
+}
