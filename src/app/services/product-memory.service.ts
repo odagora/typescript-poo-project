@@ -9,11 +9,11 @@ export class ProductMemoryService {
   create (data: CreateProductDto): Product {
     const newProduct = {
       ...data,
-      id: faker.datatype.number(),
+      id: faker.number.int(),
       category: {
         id: data.categoryId,
         name: faker.commerce.department(),
-        image: faker.image.imageUrl()
+        image: faker.image.url()
       }
     }
     return this.add(newProduct)
@@ -37,9 +37,8 @@ export class ProductMemoryService {
   findOne(id: Product['id']) {
     return this.products.find(product => product.id === id)
   }
+
+  getAll() {
+    return this.products
+  }
 }
-
-
-
-
-
