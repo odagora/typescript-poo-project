@@ -2,9 +2,16 @@ import { faker } from '@faker-js/faker';
 
 import { Product } from '../models/product.model';
 import { CreateProductDto, UpdateProductDto } from '../dtos/product.dto';
+import { ProductService } from '../models/product-service.model';
 
-export class ProductMemoryService {
-  private products: Product[] = [];
+export class ProductMemoryService implements ProductService {
+  constructor(
+    private products: Product[] = []
+  ){}
+
+  getAll() {
+    return this.products
+  }
 
   create (data: CreateProductDto): Product {
     const newProduct = {
@@ -38,7 +45,4 @@ export class ProductMemoryService {
     return this.products.find(product => product.id === id)
   }
 
-  getAll() {
-    return this.products
-  }
 }
