@@ -11,9 +11,9 @@ productService.create({
 })
 
 const products = productService.getAll()
-const product = products[0].id
+console.log(products);
 
-console.log(product);
+const product = products[0].id
 
 productService.update(product, {
   title: 'New product 1 name',
