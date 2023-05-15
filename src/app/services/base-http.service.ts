@@ -5,7 +5,7 @@ import { UpdateProductDto } from "../dtos/product.dto"
 
 export class BaseHttpService<TypeClass> {
   constructor(
-    private url: string
+    protected url: string
   ){}
 
   async getAll() {
